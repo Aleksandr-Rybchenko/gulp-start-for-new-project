@@ -1,0 +1,9 @@
+@import "../mixins/reset_button";
+@import "../variables/fonts";
+@import "../variables/colors";
+
+.btn {
+	@include ResetButton;
+
+	
+}

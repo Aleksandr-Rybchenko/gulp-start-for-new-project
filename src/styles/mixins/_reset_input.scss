@@ -1,0 +1,9 @@
+@mixin ResetInput {
+	box-shadow: none;
+	border: none;
+	outline: none;
+	border-radius: 0;
+	width: 100%;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+}

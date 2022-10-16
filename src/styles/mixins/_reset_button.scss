@@ -1,0 +1,43 @@
+@mixin ResetButton {
+	display: inline-block;
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow: visible;
+	outline: none;
+	cursor: pointer;
+	appearance: none;
+
+	background: transparent;
+	border-radius: 0;
+
+	/* inherit font & color from ancestor */
+	font: inherit;
+	color: inherit;
+	text-decoration: none;
+	text-align: inherit;
+
+	/* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+	line-height: normal;
+
+	/* Corrects font smoothing for webkit */
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+
+	/* Corrects inability to style clickable `input` types in iOS */
+	-webkit-appearance: none; /* for input */
+	-moz-appearance: none;
+
+	-webkit-user-select: none; /* for button */
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Remove excess padding and border in Firefox 4+ */
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+
+}

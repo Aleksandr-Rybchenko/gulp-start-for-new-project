@@ -1,0 +1,18 @@
+@use "sass:math";
+
+$rem_scaler_base_fz: 14px;
+
+//---------------------------------------------------------------------------------------
+//	PX TO REM conversion rem(12px, basefontsize);
+//---------------------------------------------------------------------------------------
+@function to-rem($px, $base) {
+	@if $px == 0 { @return 0 }
+	//@return $px / $base + 0rem; deprecated and will be removed in Dart Sass 2
+	@return math.div($px, $base) + 0rem;
+}
+//---------------------------------------------------------------------------------------
+//	PX TO REM conversion rem(12px, basefontsize);
+//---------------------------------------------------------------------------------------
+@function rem($px) {
+	@return to-rem($px, $rem_scaler_base_fz);
+}

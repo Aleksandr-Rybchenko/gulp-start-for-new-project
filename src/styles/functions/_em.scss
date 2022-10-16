@@ -1,0 +1,14 @@
+@use "sass:math";
+
+//---------------------------------------------------------------------------------------
+//	PX TO EM conversion @include em(12px, basefontsize);
+//---------------------------------------------------------------------------------------
+@function to-em($px, $base) {
+	@if $px == 0 { @return 0 }
+	//@return $px / $base + 0em; deprecated and will be removed in Dart Sass 2
+	@return math.div($px, $base) + 0em;
+}
+
+@function em($px, $base) {
+	@return to-em($px, $base);
+}

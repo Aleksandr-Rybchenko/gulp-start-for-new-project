@@ -1,0 +1,16 @@
+@mixin input_placeholder {
+
+	&:placeholder { @content; }
+
+	&::placeholder { @content; }
+
+	//&:-moz-placeholder { @content; } - deprecated in FF 19
+
+	&::-moz-placeholder { @content; }
+
+	&::-webkit-input-placeholder { @content; }
+
+	&:-ms-input-placeholder { @content; }
+
+	&.placeholder { @content; }
+}

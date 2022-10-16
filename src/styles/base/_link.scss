@@ -1,0 +1,16 @@
+a, .link { outline: none;
+
+	&, &:link, &:visited { font-family: inherit; color: $color_link; text-decoration: none; cursor: pointer;  }
+
+	&.notClickable { cursor: default; }
+
+	&._inherit-color { color: inherit; }
+
+	&._underlined-always { text-decoration: underline; }
+
+	//hover state - if you need underlined behavior add ._link-underlined class or add it to links wrapper element
+	p &:hover,
+	&._link-underlined:hover,
+	._link-underlined &:hover { text-decoration: underline; }
+
+}

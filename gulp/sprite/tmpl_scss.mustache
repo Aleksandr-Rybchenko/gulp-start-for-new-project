@@ -1,0 +1,16 @@
+[class*="{{prefixStatic}}"] { font-size: {{baseFz}}px; position: relative;
+
+	&:before { content: ''; display: block; }
+
+	svg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+}
+
+{{#shapes}}
+.{{name}} { width: calc({{width.outer}}/{{baseFz}} * 1em);
+
+	&:before { padding-bottom: calc({{height.outer}} / {{width.outer}} * 100%); }
+
+}
+
+{{/shapes}}

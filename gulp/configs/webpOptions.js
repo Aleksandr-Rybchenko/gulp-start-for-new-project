@@ -1,0 +1,15 @@
+export const webpOptions = {
+	preset: 'default',
+	quality: 75,
+	alphaQuality: 50,
+	method: 4,
+	// size: ,
+	sns: 80,
+	filter: 0,
+	autoFilter: true,
+	sharpness: 0,
+	nearLossless: 100,
+	// crop: ,
+	// resize: ,
+	metadata: 'none',
+};
